@@ -84,5 +84,11 @@ public class StudentController {
 		service.deleteStudentById(id);
 		return "redirect:/";
 	}
+	
+	@GetMapping("/hello")
+	public String msg()
+	{
+		return "Hello world";
+	}
 
 }

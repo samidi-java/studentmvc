@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body bgcolor="cyan">
+<h2>Student Form</h2>
+<hr>
+<form action="update" method="post" th:object="${student}">
+Enter Student No:<input type="text" name="id"  th:field="*{id}" readonly="readonly"/>
+<br>
+Enter Student Name:<input type="text" name="sname" th:field="*{sname}" required="required"/>
+<br>
+Enter Student Marks:<input type="text" name="marks" th:field="*{marks}" required="required"/>
+<br>
+<input type="submit" value="Save or Update" />
+
+</form>
+
+</body>
+</html>
